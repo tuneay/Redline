@@ -1,0 +1,49 @@
+{
+  "name": "redline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An evidence-led AI interrogation interface that pressure-tests startup ideas through five adaptive questions and an evidence-linked verdict.",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuneay/Redline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tuneay/Redline/issues"
+  },
+  "homepage": "https://github.com/tuneay/Redline#readme",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "typecheck": "tsc --noEmit",
+    "test:phase34": "node --test tests/phase-3-4.test.mjs",
+    "test:phase56": "node --test tests/phase-5-6.test.mjs",
+    "test:phase7": "node --test tests/phase-7.test.mjs",
+    "test": "npm run test:phase34 && npm run test:phase56 && npm run test:phase7"
+  },
+  "dependencies": {
+    "@ai-sdk/groq": "^4.0.13",
+    "ai": "^7.0.34",
+    "motion": "^12.42.2",
+    "next": "16.2.11",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.11",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
